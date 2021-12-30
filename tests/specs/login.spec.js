@@ -11,7 +11,6 @@ describe('Login', () => {
         const signInPage = new SignInPage(page);
         const myAccountPage = new MyAccountPage(page);
 
-
         await homePage.navigate();
         await homePage.clickSignIn();
         await signInPage.login("novoemailteste@gmail.com", "teste123");

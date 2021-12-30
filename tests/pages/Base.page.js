@@ -7,7 +7,7 @@ class BasePage {
     }
 
     async navigate(path) {
-        await this.page.goto(`${this.baseUrl}/${path}`)
+        await this.page.goto(`${this.baseUrl}/${path}`);
     }
 }
 

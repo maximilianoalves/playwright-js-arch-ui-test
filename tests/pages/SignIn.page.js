@@ -8,6 +8,8 @@ class SignInPage extends BasePage {
         this.tfEmail = page.locator('#email');
         this.tfPassword = page.locator('#passwd');
         this.btnSubmit = page.locator('#SubmitLogin');
+        this.tfEmailCreate = page.locator('#email_create');
+        this.btnCreateAccount = page.locator('#SubmitCreate')
 
     }
 
@@ -19,6 +21,14 @@ class SignInPage extends BasePage {
         await this.tfEmail.fill(email);
         await this.tfPassword.fill(password);
         await this.btnSubmit.first().click();
+    }
+
+    async insertEmailCreateAccount(email) {
+        await this.tfEmailCreate.fill(email);
+    }
+
+    async clickBtnCreateAccount() {
+        await this.btnCreateAccount.first().click();
     }
 
 }

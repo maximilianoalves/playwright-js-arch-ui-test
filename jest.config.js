@@ -6,6 +6,6 @@
       "jest-allure/dist/setup"
     ],
     "testRunner": "jest-jasmine2",
-    reporters: ["default", "jest-playwright-allure"],
+    reporters: ["default"],
     verbose: true,
   }
