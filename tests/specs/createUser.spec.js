@@ -2,6 +2,7 @@ const Utils = require('../utils/Utils')
 const HomePage = require('../pages/Home.page');
 const SignInPage = require('../pages/SignIn.page');
 const CreateAccount = require('../pages/CreateAccount.page');
+const MyAccountPage = require('../pages/MyAccount.page');
 
 describe('Create an Account', () => {
 
@@ -10,6 +11,7 @@ describe('Create an Account', () => {
         const homePage = new HomePage(page);
         const signInPage = new SignInPage(page);
         const createAccount = new CreateAccount(page);
+        const myAccountPage = new MyAccountPage(page);
 
         const firstname = utils.getFirstname();
         const lastname = utils.getLastName()
@@ -27,9 +29,12 @@ describe('Create an Account', () => {
         await createAccount.fillAddressLastname(lastname);
         await createAccount.fillAddressName("rua teste, 123");
         await createAccount.fillCity("New York")
-        await createAccount.selectState("32");
-        await createAccount.fillPostCode("93210220");
+        await createAccount.fillState("32");
+        await createAccount.fillPostCode("93210");
         await createAccount.fillMobilePhone("51995484857");
         await createAccount.clickBtnRegister();
+
+        let username = await myAccountPage.getUsername();
+        expect(username).toEqual(`${firstname} ${lastname}`);
     });
 });
