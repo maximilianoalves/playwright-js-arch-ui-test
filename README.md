@@ -37,6 +37,6 @@
 - Instalar as dependencias: ```npm i```
 - Executar os testes: ```npm run test```
 - Abrir o relatório: ```npm run report:open```  
-  - _se a task não for executada corretamente instala a dependencia do allure-commandline de forma global: ```npm i -g allure-commandline```_  
+  - _se a task não for executada corretamente instala a dependencia do allure-commandline e o allure de forma global: ```npm i -g allure-commandline allure```_  
 
 ![Allure report](docs/imgs/report.png)
