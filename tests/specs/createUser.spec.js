@@ -6,6 +6,16 @@ const MyAccountPage = require('../pages/MyAccount.page');
 
 describe('Create an Account', () => {
 
+    beforeEach(async () => {
+        context = await global.browser.newContext()
+        page = await context.newPage()
+        global.page = page
+    })
+    
+    afterEach(async () => {
+        page.close()
+    })
+
     it('Create an Account with success', async () => {
         const utils = new Utils();
         const homePage = new HomePage(page);
