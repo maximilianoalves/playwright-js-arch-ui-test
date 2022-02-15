@@ -20,10 +20,24 @@ jobs:
       - name: Install and exec tests
         run: npm ci && npm run test
 
-      - name: Build and Deploy
+      - name: Get allure history
+        uses: actions/checkout@v2
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report action
+        uses: simple-elf/allure-report-action@master
+        with:
+          allure_results: allure-results
+          allure_history: allure-history/allure-history
+          keep_reports: 5
+
+      - name: Deploy report to Github Pages
         if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           access_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: allure-results
+          folder: allure-history/allure-history
