@@ -10,7 +10,7 @@
 - [playwright](https://playwright.dev/)
 - [jest](https://jestjs.io/)
 
-## Files Structure
+## Files Structure:
 
 📦playwright-arch-example  
  ┣ 📂allure-results  
