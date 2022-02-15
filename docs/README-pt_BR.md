@@ -1,16 +1,12 @@
-<h1 align="center"> Architecture example using Playwright for UI tests.</h1>
+<h1 align="center"> Exemplo de estrutura para projetos utilizando playwright </h1>
 
-<b>Para acessar a versão em Português do Brasil, basta clicar [aqui](/docs/README-pt_BR.md)! :brazil:</b>
-
-<p>This project was created for a architecture example of UI tests using Playwright + jest.</p>
-
-## Technologies and tools used::  
+## Tecnologias utilizadas:  
 - [JS](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) 
 - [npm](https://www.npmjs.com/)
 - [playwright](https://playwright.dev/)
 - [jest](https://jestjs.io/)
 
-## Files Structure
+## Estrutura de arquivos
 
 📦playwright-arch-example  
  ┣ 📂allure-results  
@@ -36,14 +32,11 @@
  ┣ 📜package-lock.json  
  ┗ 📜package.json  
 
-## Run examples:
+## Exemplos de execução:
 
-- Install dependencies: ```npm i```
-- Run all tests: ```npm run test```
+- Instalar as dependencias: ```npm i```
+- Executar os testes: ```npm run test```
+- Abrir o relatório: ```npm run report:open```  
+  - _se a task não for executada corretamente instala a dependencia do allure-commandline e o allure de forma global: ```npm i -g allure-commandline allure```_  
 
-
-## Report: 
-- Open report: ```npm run report:open```  
-  - _if the task not correctly run install allure-commandline e o allure by the global way: ```npm i -g allure-commandline allure```_   
-  
 ![Allure report](docs/imgs/report.png)
