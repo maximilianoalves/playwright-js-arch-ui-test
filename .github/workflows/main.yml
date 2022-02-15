@@ -38,6 +38,6 @@ jobs:
         if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          access_token: ${{ secrets.GITHUB_TOKEN }}
+          access_token: ${{ github.token }}
           branch: gh-pages
           folder: allure-history/allure-history
