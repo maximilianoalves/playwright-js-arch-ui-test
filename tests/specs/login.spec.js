@@ -23,6 +23,6 @@ describe('Login', () => {
         await homePage.clickSignIn();
         await signInPage.login("novoemailteste@gmail.com", "teste123");
         let myAccountHeading = await myAccountPage.getHeading();
-        expect(myAccountHeading).toEqual("MY ACCOUNTT");
+        expect(myAccountHeading).toEqual("MY ACCOUNT");
     });
 });

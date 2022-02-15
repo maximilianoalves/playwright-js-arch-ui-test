@@ -5,7 +5,7 @@ class PlaywrightEnvUtils extends AllureNodeEnvironment {
 
   async setup() {
     await super.setup()
-    this.global.browser = await playwright.chromium.launch({headless: false, slowMo: 100});
+    this.global.browser = await playwright.chromium.launch({headless: true, slowMo: 100});
   }
 
   async teardown() {
