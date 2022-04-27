@@ -1,0 +1,77 @@
+{
+  "uid" : "8af3aae2df46bdb9",
+  "name" : "Create an Account with success",
+  "fullName" : "Create an Account with success",
+  "historyId" : "da26169a53fa97d1cb5ccb41b4174d11",
+  "time" : {
+    "start" : 1641166316715,
+    "stop" : 1641166331570,
+    "duration" : 14855
+  },
+  "description" : "\n### Test\n```typescript\nasync () => {\n  const utils = new Utils();\n  const homePage = new HomePage(page);\n  const signInPage = new SignInPage(page);\n  const createAccount = new CreateAccount(page);\n  const myAccountPage = new MyAccountPage(page);\n  const firstname = utils.getFirstname();\n  const lastname = utils.getLastName();\n  await homePage.navigate();\n  await homePage.clickSignIn();\n  await signInPage.insertEmailCreateAccount(utils.getRandomEmail());\n  await signInPage.clickBtnCreateAccount();\n  await createAccount.selectionMr();\n  await createAccount.fillFirstname(firstname);\n  await createAccount.fillLastname(lastname);\n  await createAccount.fillPassword(\"teste123\");\n  await createAccount.fillDateOfBirth(\"14\", \"5\", \"2000\");\n  await createAccount.fillAddressFirstname(firstname);\n  await createAccount.fillAddressLastname(lastname);\n  await createAccount.fillAddressName(\"rua teste, 123\");\n  await createAccount.fillCity(\"New York\");\n  await createAccount.fillState(\"32\");\n  await createAccount.fillPostCode(\"93210\");\n  await createAccount.fillMobilePhone(\"51995484857\");\n  await createAccount.clickBtnRegister();\n  let username = await myAccountPage.getUsername();\n\n  expect(username).toEqual(`${firstname} ${lastname}`);\n};\n\n```\n",
+  "descriptionHtml" : "<h3>Test</h3>\n<pre><code class=\"language-typescript\">async () =&gt; {\n  const utils = new Utils();\n  const homePage = new HomePage(page);\n  const signInPage = new SignInPage(page);\n  const createAccount = new CreateAccount(page);\n  const myAccountPage = new MyAccountPage(page);\n  const firstname = utils.getFirstname();\n  const lastname = utils.getLastName();\n  await homePage.navigate();\n  await homePage.clickSignIn();\n  await signInPage.insertEmailCreateAccount(utils.getRandomEmail());\n  await signInPage.clickBtnCreateAccount();\n  await createAccount.selectionMr();\n  await createAccount.fillFirstname(firstname);\n  await createAccount.fillLastname(lastname);\n  await createAccount.fillPassword(&quot;teste123&quot;);\n  await createAccount.fillDateOfBirth(&quot;14&quot;, &quot;5&quot;, &quot;2000&quot;);\n  await createAccount.fillAddressFirstname(firstname);\n  await createAccount.fillAddressLastname(lastname);\n  await createAccount.fillAddressName(&quot;rua teste, 123&quot;);\n  await createAccount.fillCity(&quot;New York&quot;);\n  await createAccount.fillState(&quot;32&quot;);\n  await createAccount.fillPostCode(&quot;93210&quot;);\n  await createAccount.fillMobilePhone(&quot;51995484857&quot;);\n  await createAccount.clickBtnRegister();\n  let username = await myAccountPage.getUsername();\n\n  expect(username).toEqual(`${firstname} ${lastname}`);\n};\n\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "specs"
+  }, {
+    "name" : "subSuite",
+    "value" : "createUser.spec.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8af3aae2df46bdb9.json",
+  "parameterValues" : [ ]
+}

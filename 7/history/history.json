@@ -1,0 +1,44 @@
+{
+  "da26169a53fa97d1cb5ccb41b4174d11" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "728833ee897ff391",
+      "reportUrl" : "https://maximilianoalves.github.io/playwright-js-arch-ui-test/7//#testresult/728833ee897ff391",
+      "status" : "broken",
+      "statusDetails" : "Error. Expand for more details.",
+      "time" : {
+        "start" : 1651061402976,
+        "stop" : 1651061434170,
+        "duration" : 31194
+      }
+    } ]
+  },
+  "1d56e508348fecce58b681371baa781c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e088aa35c20ad75e",
+      "reportUrl" : "https://maximilianoalves.github.io/playwright-js-arch-ui-test/7//#testresult/e088aa35c20ad75e",
+      "status" : "broken",
+      "statusDetails" : "Error. Expand for more details.",
+      "time" : {
+        "start" : 1651061434696,
+        "stop" : 1651061475036,
+        "duration" : 40340
+      }
+    } ]
+  }
+}

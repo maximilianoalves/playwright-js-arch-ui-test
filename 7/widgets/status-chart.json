@@ -1,0 +1,21 @@
+[ {
+  "uid" : "e088aa35c20ad75e",
+  "name" : "Do login with success",
+  "time" : {
+    "start" : 1651061434696,
+    "stop" : 1651061475036,
+    "duration" : 40340
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "728833ee897ff391",
+  "name" : "Create an Account with success",
+  "time" : {
+    "start" : 1651061402976,
+    "stop" : 1651061434170,
+    "duration" : 31194
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

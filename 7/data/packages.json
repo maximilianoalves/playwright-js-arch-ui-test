@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "Create an Account with success",
+      "uid" : "728833ee897ff391",
+      "parentUid" : "bf49149a3821e34f7608bb6885d52868",
+      "status" : "broken",
+      "time" : {
+        "start" : 1651061402976,
+        "stop" : 1651061434170,
+        "duration" : 31194
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Do login with success",
+      "uid" : "e088aa35c20ad75e",
+      "parentUid" : "bf49149a3821e34f7608bb6885d52868",
+      "status" : "broken",
+      "time" : {
+        "start" : 1651061434696,
+        "stop" : 1651061475036,
+        "duration" : 40340
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "bf49149a3821e34f7608bb6885d52868"
+  } ],
+  "name" : "packages"
+}

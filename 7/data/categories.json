@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Timed out",
+    "children" : [ {
+      "name" : "Error. Expand for more details.",
+      "children" : [ {
+        "name" : "Create an Account with success",
+        "uid" : "728833ee897ff391",
+        "parentUid" : "96930e5e5b3d5a90640a2d71e7217380",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651061402976,
+          "stop" : 1651061434170,
+          "duration" : 31194
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Do login with success",
+        "uid" : "e088aa35c20ad75e",
+        "parentUid" : "96930e5e5b3d5a90640a2d71e7217380",
+        "status" : "broken",
+        "time" : {
+          "start" : 1651061434696,
+          "stop" : 1651061475036,
+          "duration" : 40340
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "96930e5e5b3d5a90640a2d71e7217380"
+    } ],
+    "uid" : "0967107722208dd4f609a98de062f929"
+  } ],
+  "name" : "categories"
+}

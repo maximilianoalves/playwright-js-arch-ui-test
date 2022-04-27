@@ -1,0 +1,115 @@
+{
+  "uid" : "e088aa35c20ad75e",
+  "name" : "Do login with success",
+  "fullName" : "Do login with success",
+  "historyId" : "1d56e508348fecce58b681371baa781c",
+  "time" : {
+    "start" : 1651061434696,
+    "stop" : 1651061475036,
+    "duration" : 40340
+  },
+  "description" : "\n### Test\n```typescript\nasync () => {\n  const homePage = new HomePage(page);\n  const signInPage = new SignInPage(page);\n  const myAccountPage = new MyAccountPage(page);\n  await homePage.navigate();\n  await homePage.clickSignIn();\n  await signInPage.login(\"novoemailteste@gmail.com\", \"teste123\");\n  let myAccountHeading = await myAccountPage.getHeading();\n\n  expect(myAccountHeading).toEqual(\"MY ACCOUNT\");\n};\n\n```\n",
+  "descriptionHtml" : "<h3>Test</h3>\n<pre><code class=\"language-typescript\">async () =&gt; {\n  const homePage = new HomePage(page);\n  const signInPage = new SignInPage(page);\n  const myAccountPage = new MyAccountPage(page);\n  await homePage.navigate();\n  await homePage.clickSignIn();\n  await signInPage.login(&quot;novoemailteste@gmail.com&quot;, &quot;teste123&quot;);\n  let myAccountHeading = await myAccountPage.getHeading();\n\n  expect(myAccountHeading).toEqual(&quot;MY ACCOUNT&quot;);\n};\n\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "Error. Expand for more details.",
+  "statusTrace" : "Exceeded timeout of 30000 ms for a test.\nUse jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n### Test\n```typescript\nasync () => {\n  const homePage = new HomePage(page);\n  const signInPage = new SignInPage(page);\n  const myAccountPage = new MyAccountPage(page);\n  await homePage.navigate();\n  await homePage.clickSignIn();\n  await signInPage.login(\"novoemailteste@gmail.com\", \"teste123\");\n  let myAccountHeading = await myAccountPage.getHeading();\n\n  expect(myAccountHeading).toEqual(\"MY ACCOUNT\");\n};\n\n```\n",
+    "status" : "broken",
+    "statusMessage" : "Error. Expand for more details.",
+    "statusTrace" : "Exceeded timeout of 30000 ms for a test.\nUse jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test.",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d08ce703b9ff3a30",
+      "name" : "Screenshot",
+      "source" : "d08ce703b9ff3a30.png",
+      "type" : "image/png",
+      "size" : 103977
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "specs"
+  }, {
+    "name" : "subSuite",
+    "value" : "login.spec.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "182c249871fabcb",
+      "status" : "failed",
+      "statusDetails" : "expect(received).toEqual(expected) // deep equality\n",
+      "time" : {
+        "start" : 1641166300837,
+        "stop" : 1641166308555,
+        "duration" : 7718
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Timed out",
+      "description" : "The test exceeded the test threshold.",
+      "traceRegex" : ".*Exceeded timeout.*",
+      "matchedStatuses" : [ "broken" ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e088aa35c20ad75e.json",
+  "parameterValues" : [ ]
+}
