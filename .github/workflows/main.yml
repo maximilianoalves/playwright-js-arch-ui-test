@@ -19,7 +19,7 @@ jobs:
         
       - name: Install and exec tests
         run: npm ci && npm run test
-
+        
       - name: Get allure history
         uses: actions/checkout@v2
         continue-on-error: true
@@ -35,7 +35,7 @@ jobs:
           keep_reports: 5
 
       - name: Deploy report to Github Pages
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           access_token: ${{ github.token }}
