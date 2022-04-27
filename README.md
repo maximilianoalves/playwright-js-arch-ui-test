@@ -2,7 +2,7 @@
 
 <b>Para acessar a versão em Português do Brasil, basta clicar [aqui](/docs/README-pt_BR.md)! :brazil:</b>
 
-<p>This project was created for a architecture example of UI tests using Playwright + jest.</p>
+<p>This project was created for a architecture example of UI tests using Playwright + jest</p>
 
 ## Technologies and tools used::  
 - [JS](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) 
