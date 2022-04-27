@@ -19,6 +19,7 @@ jobs:
         
       - name: Install and exec tests
         run: npm ci && npm run test
+        continue-on-error: true
         
       - name: Get allure history
         uses: actions/checkout@v2
